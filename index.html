@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#081120">
+
+  <title>Student Life Under Pressure</title>
+  <meta name="description" content="A student support website about study pressure, time management, mental well-being and money problems.">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="site-header">
+  <nav class="container navbar" aria-label="Main navigation">
+
+    <a class="logo" href="#home">
+      🎓 Student Life <span>Under Pressure</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      type="button" aria-label="Open navigation"
+      aria-expanded="false" aria-controls="navLinks">
+      ☰
+    </button>
+
+    <div class="links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#pressure">Problems</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#messages">Messages</a>
+      <a href="#money">Money Help</a>
+    </div>
+
+    <a class="btn nav-btn" href="#solutions">Take a Break ♥</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="container hero-content">
+
+      <div class="kicker">REAL STUDENTS. REAL PRESSURE.</div>
+
+      <h1>
+        Student Life<br>
+        <span>Under Pressure</span>
+      </h1>
+
+      <p class="hero-description">
+        Books, deadlines, expectations, money worries and a future
+        full of questions. You don't have to figure everything out
+        at once.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn" href="#pressure">Discover More →</a>
+        <a class="text-link" href="#solutions">Find Your Balance ↓</a>
+      </div>
+
+      <div class="hero-note">
+        <span class="status-dot"></span>
+        Your well-being matters more than perfection.
+      </div>
+
+    </div>
+
+    <a href="#pressure" class="scroll-indicator"
+       aria-label="Scroll to student challenges">↓</a>
+  </section>
+
+
+  <!-- PRESSURE SECTION -->
+  <section class="section pressures" id="pressure">
+    <div class="container">
+
+      <div class="heading">
+        <div class="kicker">THE PRESSURE</div>
+        <h2>What's Weighing You Down?</h2>
+        <p>Recognising challenges is the first step towards managing them.</p>
+      </div>
+
+      <div class="cards">
+
+        <article class="card">
+          <span class="emoji">📚</span>
+          <h3>Books & Studies</h3>
+          <p>Syllabus, assignments, exams and the pressure to achieve high marks.</p>
+        </article>
+
+        <article class="card">
+          <span class="emoji">⏰</span>
+          <h3>Time Pressure</h3>
+          <p>Deadlines, busy schedules and not enough time to rest.</p>
+        </article>
+
+        <article class="card">
+          <span class="emoji">💬</span>
+          <h3>Messages & Social Media</h3>
+          <p>Notifications, comparison and online distractions.</p>
+        </article>
+
+        <article class="card">
+          <span class="emoji">💰</span>
+          <h3>Money Problems</h3>
+          <p>Fees, travel, books and daily expenses.</p>
+        </article>
+
+        <article class="card">
+          <span class="emoji">🧠</span>
+          <h3>Future & Expectations</h3>
+          <p>Career choices, family expectations and fear of failure.</p>
+        </article>
+
+        <article class="card">
+          <span class="emoji">😔</span>
+          <h3>Feeling Overwhelmed</h3>
+          <p>Trying to manage everything while forgetting to care for yourself.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SOLUTIONS SECTION -->
+  <section class="section solutions-section" id="solutions">
+    <div class="container">
+
+      <div class="heading">
+        <div class="kicker">SMALL STEPS MATTER</div>
+        <h2>You Are Not Alone</h2>
+        <p>Practical ways to handle everyday student pressure.</p>
+      </div>
+
+      <div class="cards solution-grid">
+
+        <article class="card solution">
+          <span class="emoji">📖</span>
+          <h3>Plan Your Studies</h3>
+          <p>Break big assignments into small tasks. Set realistic goals and ask teachers for help.</p>
+        </article>
+
+        <article class="card solution">
+          <span class="emoji">⏳</span>
+          <h3>Manage Your Time</h3>
+          <p>Choose three priorities each day. Schedule breaks and get enough sleep.</p>
+        </article>
+
+        <article class="card solution">
+          <span class="emoji">💙</span>
+          <h3>Care for Your Mind</h3>
+          <p>Talk to someone you trust, take breaks and seek support when stress feels overwhelming.</p>
+        </article>
+
+        <article class="card solution">
+          <span class="emoji">💵</span>
+          <h3>Manage Money</h3>
+          <p>Track spending, compare book prices and ask your college about scholarships.</p>
+        </article>
+
+        <article class="card solution">
+          <span class="emoji">📵</span>
+          <h3>Set Message Boundaries</h3>
+          <p>Mute unnecessary notifications and check messages at specific times.</p>
+        </article>
+
+        <article class="card solution">
+          <span class="emoji">🌱</span>
+          <h3>Believe in Yourself</h3>
+          <p>Celebrate progress. Your worth is bigger than a test score.</p>
+        </article>
+
+      </div>
+
+      <div class="break-card">
+        <div>
+          <span class="kicker">YOUR 30-SECOND RESET</span>
+          <h3>Pause. Breathe. Begin Again.</h3>
+          <p>Relax your shoulders, breathe slowly and give yourself a moment.</p>
+        </div>
+        <button class="btn" id="breakButton" type="button">
+          Take a Breathing Break
+        </button>
+        <p class="breath-message" id="breathMessage" aria-live="polite">
+          A small pause is always okay.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- MESSAGES SECTION -->
+  <section class="section message-section" id="messages">
+    <div class="container">
+
+      <div class="heading">
+        <div class="kicker">SHARE & SUPPORT</div>
+        <h2>A Message for Every Student</h2>
+        <p>Share an encouraging thought or read supportive messages.</p>
+      </div>
+
+      <div class="message-layout">
+
+        <div class="panel">
+          <h3>💌 Leave a Message</h3>
+
+          <form id="messageForm">
+            <label for="nickname">Nickname (optional)</label>
+            <input id="nickname" name="nickname"
+              maxlength="35" placeholder="Your nickname">
+
+            <label for="messageText">Your message</label>
+            <textarea id="messageText" name="messageText"
+              maxlength="300" required
+              placeholder="You are doing better than you think..."></textarea>
+
+            <button class="btn" type="submit">Share Message ♥</button>
+          </form>
+
+          <p class="notice">
+            Demo: messages appear on this page only and are not permanently saved.
+          </p>
+        </div>
+
+        <div class="panel">
+          <h3>✨ Words to Remember</h3>
+
+          <div class="messages" id="messageList" aria-live="polite">
+
+            <article class="message">
+              <small>Student Support</small>
+              <p>You are more than your marks. Keep going, one step at a time.</p>
+            </article>
+
+            <article class="message">
+              <small>A Friend</small>
+              <p>Asking for help is courage, not weakness.</p>
+            </article>
+
+            <article class="message">
+              <small>Daily Reminder</small>
+              <p>Your journey does not need to look like anyone else's.</p>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- MONEY HELP SECTION -->
+  <section class="section money" id="money">
+    <div class="container">
+
+      <div class="heading">
+        <div class="kicker">FINANCIAL WELL-BEING</div>
+        <h2>Money Problems? Start With a Plan.</h2>
+        <p>Understand what comes in and what goes out.</p>
+      </div>
+
+      <div class="money-grid">
+
+        <article class="card">
+          <span class="emoji">🪙</span>
+          <h3>Student Money Checklist</h3>
+
+          <ul class="tips">
+            <li>✓ List fees, food, travel and study materials.</li>
+            <li>✓ Separate needs from optional purchases.</li>
+            <li>✓ Ask your college about scholarships.</li>
+            <li>✓ Consider library and used-book options.</li>
+            <li>✓ Speak to a trusted adviser about financial difficulties.</li>
+          </ul>
+        </article>
+
+        <article class="card budget-card">
+          <span class="emoji">🧮</span>
+          <h3>Monthly Budget Calculator</h3>
+
+          <label for="income">Monthly available money (₹)</label>
+          <input id="income" type="number" min="0" step="0.01"
+            inputmode="decimal" placeholder="e.g. 8000">
+
+          <label for="expenses">Essential expenses (₹)</label>
+          <input id="expenses" type="number" min="0" step="0.01"
+            inputmode="decimal" placeholder="e.g. 6000">
+
+          <button class="btn" type="button" id="calculate">
+            Calculate Balance
+          </button>
+
+          <p class="result" id="budgetResult" aria-live="polite">
+            Your result will appear here.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- QUOTE SECTION -->
+  <section class="quote">
+    <div class="container quote-content">
+
+      <div class="kicker">REMEMBER THIS</div>
+
+      <blockquote>
+        You don't have to solve your whole life today.
+        <span>Just take the next small step.</span>
+      </blockquote>
+
+      <p>Rest is productive. Asking for help is brave.</p>
+
+      <a class="btn" href="#home">Start Again ↑</a>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-row">
+
+    <div>
+      <strong>🎓 Student Life Under Pressure</strong>
+      <p>Learn. Breathe. Grow.</p>
+    </div>
+
+    <div>
+      <p>Talk to a trusted person or your college support team.</p>
+    </div>
+
+    <div>
+      <p>© <span id="year"></span> Student Well-being Project</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
